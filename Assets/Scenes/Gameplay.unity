@@ -843,7 +843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -627, y: 295.4}
+  m_AnchoredPosition: {x: -626.99994, y: 295.4}
   m_SizeDelta: {x: -1412.33, y: -730.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979770747
@@ -1727,6 +1727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1388310529}
   expText: {fileID: 337656426}
+  leaderBoard: {fileID: 979770747}
 --- !u!1 &1388310527
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ namespace UI
     {
         [SerializeField] private TMP_Text scoreText;
         [SerializeField] private TMP_Text expText;
+        [SerializeField] private LeaderBoard leaderBoard;
 
         private PlayerBehaviour _ownerObj;
         private bool _done = false;
@@ -38,6 +39,8 @@ namespace UI
 
         public void LeftRoom()
         {
+            PhotonNetwork.DestroyPlayerObjects(PhotonNetwork.LocalPlayer);
+            leaderBoard.ResetLeaderBoard();
             PhotonNetwork.LeaveRoom();
         }
 

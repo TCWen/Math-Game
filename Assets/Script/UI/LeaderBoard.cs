@@ -39,6 +39,15 @@ namespace UI
 
             _On = false;
         }
+
+        public void ResetLeaderBoard()
+        {
+            for(int i=0; i < item.Count; i++)
+            {
+                item[i].name.text = "";
+                item[i].score.text = "";
+            }
+        }
     }
 }
 
